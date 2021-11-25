@@ -6,7 +6,7 @@ buildscript {
 
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.5.6'
+    id 'org.springframework.boot' version '2.5.4'
 }
 
 repositories {
@@ -27,6 +27,12 @@ build {
 
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
+     implementation('org.springframework.boot:spring-boot-starter-actuator')
+     implementation('de.codecentric:spring-boot-admin-server:2.5.4')
+     implementation('de.codecentric:spring-boot-admin-server-ui:2.5.4')
+     implementation('de.codecentric:spring-boot-admin-starter-server:2.5.4')
+     implementation('de.codecentric:spring-boot-admin-starter-client:2.5.4')
+    implementation('org.json:json:20210307')
     compileOnly('org.projectlombok:lombok')
     annotationProcessor('org.projectlombok:lombok')
     testCompileOnly('org.projectlombok:lombok')

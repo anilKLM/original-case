@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>AirFare</title>
+ <link rel="stylesheet" href="select2.min.css">
+  <script src="jquery-3.6.0.js"></script>
+  <script src="select2.min.js"></script>
+  <script src="airfare.js"></script>
+</head>
+<body>
+ 
+<div class="ui-widget">
+  <label for="source">Source: </label>
+  <select id="source">
+	  <optgroup label="Sources">
+		<option value="" >Select Airport</option>
+	  </optgroup>  
+  </select>
+  <label for="destination">destination: </label>
+  <select id="destination">
+	  <optgroup label="Destinations">
+		<option value="" >Select Airport</option>
+	  </optgroup>
+  </select>
+  <button id="getFare" disabled="disabled">Get Fare</button>
+  
+  <h2 id="fareDetail" style='display:none;'></h2>
+</div>
+</body>
+</html>
